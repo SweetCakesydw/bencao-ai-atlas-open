@@ -1,0 +1,30 @@
+# Local and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Dependencies and generated output
+node_modules/
+dist/
+build/
+netlify-dist/
+coverage/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+supabase/.temp/
+
+# Production-only material must not enter this repository
+private/
+internal/
+production/
+data/raw/
+data/private/

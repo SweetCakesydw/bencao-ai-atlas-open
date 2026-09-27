@@ -1,0 +1,44 @@
+name: 体验问题
+description: 反馈线上网站的界面、文档或可访问性问题
+title: "[Experience] "
+labels:
+  - experience
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢反馈。请勿填写 API Key、Cookie、账号信息、病历或其他隐私内容。
+  - type: dropdown
+    id: area
+    attributes:
+      label: 问题区域
+      options:
+        - 首页与导航
+        - AI 草药问答
+        - 病证导航
+        - 本草经纬图谱
+        - 趣味人格测试
+        - 分类、图鉴或仿真原书
+        - 公开仓库文档
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 问题描述
+      description: 请说明实际看到的结果与期望结果。
+    validations:
+      required: true
+  - type: input
+    id: browser
+    attributes:
+      label: 浏览器与设备
+      placeholder: 例如 Edge 140 / Windows 11
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: 隐私确认
+      options:
+        - label: 我已确认本 Issue 不包含密钥、账号凭证或个人隐私信息。
+          required: true

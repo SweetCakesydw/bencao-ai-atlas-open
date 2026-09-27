@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 线上体验
+    url: https://zhongyao-ai-v2.vercel.app/
+    about: 先访问正式网站，确认问题是否仍然存在。
+  - name: 安全问题报告说明
+    url: https://github.com/SweetCakesydw/bencao-ai-atlas-open/security/policy
+    about: 请勿在公开 Issue 中披露漏洞细节或凭证。
